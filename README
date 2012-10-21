@@ -6,17 +6,17 @@ PyColors is a Python module that makes text coloring easier to do.
 Example
 ==========================
 
-#Linux
-import PyColors
+	#Linux
+	import PyColors
+	
+	a = PyColors.linux()
+	b = a.color(text="This is the text that will be displayed", color='red', highlight='blue', other='bold')
+	print b
 
-a = PyColors.linux()
-b = a.color(text="This is the text that will be displayed", color='red', highlight='blue', other='bold')
-print b
+	#Windows
+	import PyColors
+	
+	a = PyColors.windows()
+	b = a.color(background="blue", textcolor='red')
 
-#Windows
-import PyColors
-
-a = PyColors.windows()
-b = a.color(background="blue", textcolor='red')
-
-#This will set the universal color to what ever you want, the windows class is not as useful as the linux class. 
+	#This will set the universal color to what ever you want, the windows class is not as useful as the linux class. 
