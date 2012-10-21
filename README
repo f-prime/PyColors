@@ -17,6 +17,6 @@ print b
 import PyColors
 	
 a = PyColors.windows()
-b = a.color(background="blue", textcolor='red')
+a.color(background="blue", textcolor='red')
 
 #This will set the universal color to what ever you want, the windows class is not as useful as the linux class. 
