@@ -8,7 +8,7 @@ class windows():
   def __init__(self):
     self.colors = {'black':'0', 'blue':'1', 'green':'2', 'aqua':'3', 'red':'4','purple':'5','yellow':'6','white':'7','gray':'8','light_blue':'9','light_green':'a','light_aqua':'b','light_red':'c','light_purple':'d','light_yellow':'e','bright_white':'f'}
   def color(self, textcolor=None, background=None):
-    coloring = "color {0}{1}".format(self.colors[textcolor], self.colors[background])
+    coloring = "color {0}{1}".format(self.colors[background], self.color[textcolor])
     os.system(coloring)
 
 class linux():
